@@ -1,0 +1,27 @@
+The goal of this project is to keep track and display the game score.
+
+- if the ball goes off the table's left border -- +1 point;
+- if the ball goes off the table's top or bottom border -- -1 point.
+When the method moveTheBall stops playing the timeline,
+the ball’s x-coordinate is definitely less than zero so
+you need to check the y-coordinate of the ball.
+
+
+If the y-coordinate of the ball has a value between zero
+and the table height, you can assume that the ball crossed the
+left border of the table and the Kid scored one point.
+Otherwise the ball crossed either top or bottom table’s borders
+and the Kid should loose the point.
+
+
+
+The Computer scores one point if it bounces the ball
+and it crosses the right border of the table.
+
+Don’t forget to implement the Start New Game functionality.
+You’ll need to write a method newGame, where you should
+reset the scores and place the paddles and the ball
+in the starting positions.
+
+Your goal is to display the score in a nice font
+on the bottom left corner of the table.

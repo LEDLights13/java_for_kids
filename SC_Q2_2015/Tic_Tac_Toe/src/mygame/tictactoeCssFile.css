@@ -1,0 +1,68 @@
+
+
+
+Button{
+  -fx-focus-color: transparent;
+  -fx-background-insets: -1, 0, 1, 1;
+
+  -fx-font-weight: bold;
+  -fx-font-size: 36;
+  -fx-text-fill: darkgreen;
+  -fx-background-color: #6495ED;
+  -fx-border-color: darkgreen;
+
+}
+
+.menu-bar{
+    -fx-background-color: pink;
+}
+
+.winning-square {
+    -fx-text-fill: red;
+    -fx-background-color: radial-gradient( radius 100%, white, violet, lawngreen);
+    }
+
+
+
+/*Button {
+    -fx-background-color: CornflowerBlue ;
+    -fx-font-family:"Comic Sans MS";
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-border-radius: 20;
+    -fx-background-radius: 15;
+    -fx-padding: 5;
+}
+
+#xxx {
+    -fx-background-color: green ;
+
+}
+
+/*
+#submitBtn{
+    -fx-background-color: aquamarine;
+    -fx-font-family:"Comic Sans MS";
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-border-radius: 20;
+    -fx-background-radius: 15;
+    -fx-padding: 5;
+
+}
+/*
+.label{
+    -fx-text-fill: darkgreen;
+    -fx-font-family:"Comic Sans MS";
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+}
+
+
+#conf_message{
+    -fx-text-fill: darkred;
+    -fx-font-weight: bold;
+
+    }
+
+*/

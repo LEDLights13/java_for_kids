@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.*?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.shape.*?>
+
+<Group fx:id="theGroup" focusTraversable="true" onKeyReleased="#keyReleasedHandler" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="pingpong.PingPongController">
+  <children>
+    <Rectangle fx:id="table" fill="#31b287" height="250.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+    <Rectangle fx:id="computerPaddle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="24.0" layoutY="98.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+    <Rectangle fx:id="kidPaddle" arcHeight="5.0" arcWidth="5.0" fill="#f0ff1f" height="50.0" layoutX="365.0" layoutY="98.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+    <Circle fx:id="ball" centerX="191.0" centerY="123.0" fill="#cc3100" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+    <TextField fx:id="textFiled" alignment="TOP_LEFT" layoutX="200.0" layoutY="0.0" prefWidth="200.0" text="" />
+  </children>
+</Group>

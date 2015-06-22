@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="539.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <BorderPane layoutX="80.0" layoutY="43.0" prefHeight="514.0" prefWidth="459.0">
+      <bottom>
+        <HBox prefHeight="51.0" prefWidth="459.0">
+          <children>
+            <Hyperlink text="Link 1" />
+            <Hyperlink text="Link 2" />
+            <Hyperlink text="Link 3" />
+          </children>
+        </HBox>
+      </bottom>
+      <left>
+        <VBox opacity="1.0" prefHeight="200.0" prefWidth="100.0">
+          <children>
+            <Button mnemonicParsing="false" prefWidth="100.0" text="Menu 1" />
+            <Button mnemonicParsing="false" prefWidth="100.0" text="Menu 2" />
+            <Button mnemonicParsing="false" prefWidth="100.0" text="Menu 3" />
+          </children>
+        </VBox>
+      </left>
+      <top>
+        <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="452.0" text="This is the Header" textAlignment="CENTER" />
+      </top>
+    </BorderPane>
+  </children>
+</AnchorPane>

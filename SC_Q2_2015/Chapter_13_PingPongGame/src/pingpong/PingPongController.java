@@ -10,6 +10,8 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.fxml.FXML;
 import javafx.scene.Group;
+import javafx.scene.control.*;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
@@ -18,6 +20,7 @@ import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
 
+import java.awt.*;
 import java.util.Random;
 
 
@@ -51,7 +54,7 @@ public class PingPongController {
     @FXML Rectangle kidPaddle;
     @FXML Rectangle computerPaddle;
     @FXML Circle ball;
-    @FXML TextField textField;
+    @FXML Label score_label;
 
 
     public void initialize(){
@@ -63,8 +66,7 @@ public class PingPongController {
         currentCompPaddleY.set(computerPaddle.getLayoutY());
         computerPaddle.layoutYProperty().bind(currentCompPaddleY);
 
-//        textFieldText.set(textField.getText());
-//        textField.textProperty().bindBidirectional(textFieldText.getValue());
+        score_label.setText("Kid: " + kidScore + "    Comp: " + compScore);
 
         ballCenterX.set(ball.getCenterX());
         ball.centerXProperty().bind(ballCenterX);
@@ -75,8 +77,6 @@ public class PingPongController {
         allowedPaddleBottomY = table.getHeight() - kidPaddle.getHeight() - PADDLE_MOVEMENT_INCREMENT;
 
         centerTableY = table.getHeight()/2;
-
-//        textField.textProperty().setValue("Kid: " + kidScore);
 
     }
 
@@ -116,8 +116,6 @@ public class PingPongController {
     private void process_key_n() {
         newGame();
 
-        textField.setText("jkaq");
-        System.out.println(textField.getText());
     }
 
     private void process_key_s() {
@@ -133,7 +131,7 @@ public class PingPongController {
         Random random = new Random();
         double nextIncrement = random.nextInt(BALL_MOVEMENT_INCREMENT);
 
-        final boolean isServingFromTop = (ballCenterY.get() <= centerTableY)?true:false;
+        final boolean isServingFromTop = (ballCenterY.get() <= centerTableY);
 
         KeyFrame keyFrame = new KeyFrame(new Duration(20),
                 event -> {
@@ -214,7 +212,7 @@ public class PingPongController {
         else if (ballCenterY.get() < 0 || ballCenterY.get() > table.getHeight()){
             compScore += 1;
         }
-        textField.appendText("Kid: ");
+        score_label.setText("Kid: " + kidScore + "    Comp: " + compScore);
 
         System.out.println("Kid score: " + kidScore);
         System.out.println("Computer score: " + compScore);
@@ -227,6 +225,7 @@ public class PingPongController {
         ballCenterY.set(currentKidPaddleY.get() + kidPaddle.getHeight()/2);
         kidScore = 0;
         compScore = 0;
+        score_label.setText("Kid: " + kidScore + "    Comp: " + compScore);
 
     }
 

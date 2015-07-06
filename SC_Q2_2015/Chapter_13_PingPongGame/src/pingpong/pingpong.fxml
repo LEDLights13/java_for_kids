@@ -17,6 +17,6 @@
     <Rectangle fx:id="computerPaddle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="24.0" layoutY="98.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
     <Rectangle fx:id="kidPaddle" arcHeight="5.0" arcWidth="5.0" fill="#f0ff1f" height="50.0" layoutX="365.0" layoutY="98.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
     <Circle fx:id="ball" centerX="191.0" centerY="123.0" fill="#cc3100" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
-    <TextField fx:id="textFiled" alignment="TOP_LEFT" layoutX="200.0" layoutY="0.0" prefWidth="200.0" text="" />
+    <Label fx:id="score_label" layoutX="250.0" layoutY="0.0" prefHeight="18.0" prefWidth="200.0" text="Label" />
   </children>
 </Group>

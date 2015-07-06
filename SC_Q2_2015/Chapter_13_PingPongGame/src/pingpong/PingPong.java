@@ -20,6 +20,8 @@ public class PingPong extends Application {
         primaryStage.initStyle(StageStyle.UNDECORATED);
         primaryStage.show();
 
+        scene.getStylesheets().add("pingpong/pingpongCssFile.css");
+        primaryStage.show();
         root.requestFocus();
     }
 
